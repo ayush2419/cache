@@ -12,6 +12,7 @@ func main() {
 		IsLeader:   true,
 	}
 
+
 	server := server.NewServer(serverConfig, pkg.NewHandler(cache.NewCache()))
 	server.Start()
 }
